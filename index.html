@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirecting to Signin</title>
+  <title>Redirecting to Login</title>
   
-  <!-- 自動跳轉到 signin/ -->
-  <meta http-equiv="refresh" content="0; url=signin/">
+  <!-- 自動跳轉到 login/ -->
+  <meta http-equiv="refresh" content="0; url=login/">
 
-  <!-- 如果你想用 JavaScript 也可以這樣寫（可選） -->
+  <!-- JavaScript 備援（可選） -->
   <script>
-    // window.location.href = "signin/";  // 若 meta refresh 失效，可啟用
+    // 若 meta refresh 失效，可啟用這行
+    // window.location.href = "login/";
   </script>
 </head>
 <body>
-  <p>正在跳轉到登入頁…如果沒有自動跳轉，請點 <a href="signin/">這裡</a>。</p>
+  <p>正在跳轉到登入頁…</p>
+  <p>如果沒有自動跳轉，請點 <a href="login/">這裡</a>。</p>
 </body>
 </html>
