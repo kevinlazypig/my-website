@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirecting to Login</title>
-  
-  <!-- 自動跳轉到 login/ -->
-  <meta http-equiv="refresh" content="0; url=/signin">
-
-  <!-- JavaScript 備援（可選） -->
-  <script>
-    // 若 meta refresh 失效，可啟用這行
-    // window.location.href = "login/";
-  </script>
+<meta charset="UTF-8">
+<title>SSL Server Test</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 40px; }
+h1 { color: #333; }
+label { display: inline-block; width: 80px; }
+input[type="text"] { width: 300px; }
+</style>
 </head>
 <body>
-  <p>正在跳轉到登入頁…</p>
-  <p>如果沒有自動跳轉，請點 <a href="login/">這裡</a>。</p>
+
+<h1>SSL Server Test</h1>
+
+<p id="serverTestPara">
+This free online service performs a deep analysis of the configuration of any SSL web server on the public Internet.
+<b>Please note that the information you submit here is used only to provide you the service.
+We don't use the domain names or the test results, and we never will.</b>
+</p>
+
+<form method="GET" action="https://www.ssllabs.com/ssltest/analyze.html">
+    <label for="hostname">Hostname:</label>
+    <input type="text" id="hostname" name="d" size="48" value="" autofocus autocomplete="off">
+    <input type="submit" value="Submit">
+    <br><br>
+    <input id="hideResults" type="checkbox" name="hideResults">
+    <label for="hideResults">Do not show the results on the boards</label>
+</form>
+
 </body>
 </html>
